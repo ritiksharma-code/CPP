@@ -17,7 +17,7 @@ int main()
    
 
     // Put data into the first structure
-    car car1;       // We can also use one structure to represent two cars
+    car car1;      // We can also use one structure to represent two cars
     car1.brand = "BMW";
     car1.model = "X5";
     car1.year = 1999;
