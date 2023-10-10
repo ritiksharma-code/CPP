@@ -15,7 +15,7 @@ int main()
     ofstream myfile("file.txt");
 
     // Write to the file
-    myfile<<"Files can be tricky, but it is fun enough!";
+    myfile<<"Files can be tricky, but it is fun enough!!";
 
     // Close the file
     myfile.close();
