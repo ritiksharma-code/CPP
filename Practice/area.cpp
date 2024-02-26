@@ -29,13 +29,22 @@ void rectangle()
     cout<<"The area of rectangle is: "<<area<<endl;
 }
 
+void triangle()
+{
+    float base, height, area;
+    cout<<"Enter the base and height: ";
+    cin>>base>>height;
+    area = 0.5*base*height;
+    cout<<"THe area of triangle is: "<<area<<endl;
+}
+
 int main()
 {
     int ch;
     while(1)
     {
         cout<<"\nEnter the choice to find area of the following: "<<endl;
-        cout<<"\n1: Circle\n2: Square\n3: Rectangle\n0: EXIT"<<endl;
+        cout<<"\n1: Circle\n2: Square\n3: Rectangle\n4: Triangle\n0: EXIT"<<endl;
         scanf("%d", &ch);
         switch(ch)
         {
@@ -52,6 +61,11 @@ int main()
             case 3:
             {
                 rectangle();
+                break;
+            }
+            case 4:
+            {
+                triangle();
                 break;
             }
             case 0:
