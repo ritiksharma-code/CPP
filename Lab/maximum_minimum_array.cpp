@@ -10,23 +10,39 @@ void findMinMax(const int arr[], int n)
         return;
     }
 
-    int min = INT_MAX;
-    int max = INT_MIN;
+    int min = arr[0];
+    int max = arr[0];
 
-    for (int i = 0; i < n; ++i)
+    for (int i = 0; i < n; i++)
     {
-        if (arr[i] < min)
+        if(arr[i]<min)
         {
             min = arr[i];
         }
-        if (arr[i] > max)
+        if(arr[i]>max)
         {
             max = arr[i];
         }
     }
-
     cout << "Minimum element: " << min << endl;
     cout << "Maximum element: " << max << endl;
+
+    min = arr[0];
+    int second = arr[0];
+    
+    for(int i = 0; i<n && arr[i]!=max; i++)
+    {
+        if(arr[i]<min)
+        {
+            min = arr[i];
+        }
+        if(arr[i]>second)
+        {
+            second = arr[i];
+        }
+
+    }
+    cout << "Second Maximum element: " << second << endl;
 }
 
 int main()

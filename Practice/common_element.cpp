@@ -1,50 +1,18 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
-vector<int> findCommonElements(const vector<int> &arr1, const vector<int> &arr2, const vector<int> &arr3)
-{
-    vector<int> commonElements;
-    int i = 0, j = 0, k = 0;
-
-    while (i < arr1.size() && j < arr2.size() && k < arr3.size())
-    {
-        if (arr1[i] == arr2[j] && arr2[j] == arr3[k])
-        {
-            commonElements.push_back(arr1[i]);
-            i++;
-            j++;
-            k++;
-        }
-        else if (arr1[i] < arr2[j])
-        {
-            i++;
-        }
-        else if (arr2[j] < arr3[k])
-        {
-            j++;
-        }
-        else
-        {
-            k++;
-        }
-    }
-    return commonElements;
-}
 int main()
 {
-    vector<int> arr1 = {1, 5, 10, 20, 40, 80};
-    vector<int> arr2 = {6, 7, 20, 80, 100};
-    vector<int> arr3 = {3, 4, 15, 20, 30, 70, 80, 120};
-
-    vector<int> commonElements = findCommonElements(arr1, arr2, arr3);
-
-    cout << "Common elements in the three arrays: ";
-    for (int element : commonElements)
+    int arr1[] = {10,20,30,40,50};
+    int arr2[] = {10, 15, 23, 30, 59, 64};
+    int arr3[] = {5, 8, 10, 12, 15, 30, 32, 43};
+    int n1 = 5;
+    int n2 = 6;
+    int n3 = 8;
+    int i = 0, j = 0, k = 0;
+    while(i<n1 ** j<n2 && k<n3)
     {
-        cout << element << " ";
+        if(arr1[i]==arr2[j] && arr3[])
     }
-    cout << endl;
-
     return 0;
 }
